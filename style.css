@@ -1,0 +1,214 @@
+body{
+    background-color: rgb(62, 61, 61);
+    color: green
+}
+h1{
+    text-align: center;
+    letter-spacing: 2px;
+    border: 25px solid gold;
+    background-color: lightskyblue;
+    animation: tlo 5s infinite;
+}
+
+table{
+    border: 5px solid black;
+}
+td{
+    border: 2px solid black;
+}
+tr{
+    border: 2px solid black;
+}
+table:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+aside{
+    float: right;
+    width: 25%;
+    height: 600px;
+}
+.baza{
+    width: 70%;
+    float: left;
+}
+footer{
+    clear: both;
+    text-align: center;
+}
+header{
+    text-align: center;
+    font-size: 120%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: rgba(21, 36, 201, 0.822);
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size:20px;
+    border-radius: 5px;
+}
+a.active{
+    background-color: black;
+    color: white;
+    border: 5px solid black;
+}
+a:hover{
+    background-color: black;
+    color: blue;
+}
+a:visited{
+    color: orange;
+}
+a:link{
+    color: green
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none; text-align: center;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes tlo {
+  0% {background-color: lightskyblue; border-color: gold;}
+  50% {background-color: gold; border-color: lightskyblue;}
+  100% {background-color: lightskyblue; border-color: gold;}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+form{
+    text-align: center;
+    font-size: 120%;
+}
+p{
+    text-align: center;
+    font-size: 120%;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  background: lightskyblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+#menu-toggle {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+  aside {
+    width: 100%;
+    float: none;
+  }
+  .baza {
+    width: 100%;
+    float: none;
+  }
+  h1 {
+    font-size: 1.5em;
+    border: 10px solid gold;
+  }
+  .slideshow-container {
+    max-width: 90%;
+  }
+  .hamburger {
+    display: block;
+  }
+  #menu {
+    display: none;
+    flex-direction: column;
+  }
+  #menu-toggle:checked ~ #menu {
+    display: flex;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1199px) {
+  nav {
+    font-size: 18px;
+    gap: 8px;
+  }
+  h1 {
+    font-size: 2em;
+    border: 20px solid gold;
+  }
+  .slideshow-container {
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    font-size: 24px;
+    gap: 15px;
+  }
+  h1 {
+    font-size: 2.5em;
+    border: 30px solid gold;
+  }
+  .slideshow-container {
+    max-width: 1200px;
+  }
+}
