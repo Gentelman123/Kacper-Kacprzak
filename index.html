@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="ranking" content="Kosmici Ben 10">
+    <meta name="keywords" content="Obcy, Ben, Omnitrix, zdolośći, kosmici, Cartoon Network">
+    <meta name="author" content="Kacper Kacprzak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 cudów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="logo">7 najlepszych kosmitów Ben 10</h1>
+    </header>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰ Menu</label>
+    <nav id="menu">
+        <a class="active" href="#home">Główna</a>
+         <a href="X.html">Obcy X</a>
+         <a href="Zegar.html">Clockwork</a>
+         <a href="Feedback.html">Feedback</a>
+         <a href="Atom.html">Atomix</a>
+         <a href="WB.html">Way Big</a>
+         <a href="Wiertlo.html">Armowiertło</a>
+         <a href="Szok.html">Shocksquatch</a>
+         <a href="Ankieta.html">Ankieta</a>
+         <hr>
+         <a href="#mapa">Miejsce powstania Ben 10</a>
+    </nav>
+    <main>
+    <h2>Galeria kosmitów</h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="Media/Alien.jpg">
+  <div class="text">Obcy X</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="Media/zegar.jpg">
+  <div class="text">Clockwork</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="Media/feedback.jpg">
+  <div class="text">Feedback</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="Media/Atomix.jpg">
+  <div class="text">Atomix</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="Media/Way-Big.jpg">
+  <div class="text">Way Big</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="Media/Armowiertlo.jpg">
+  <div class="text">Armowiertło</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="Media/Shocksquatch.jpg">
+  <div class="text">Shocksquatch</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+    </main>
+    <script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</main>
+<br>
+<h2>Miejsce w którym powstał Ben 10</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.728831238377!2d-118.33659142546979!3d34.153279073119016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c295d9fba32dc1%3A0xeed0bb23a381030!2sCartoon%20Network%20Studios!5e0!3m2!1spl!2spl!4v1765731362375!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+<br>
+<footer>
+        <a href="#logo">Powrót na początek</a>
+        <a href="https://ben10.fandom.com/wiki/Category:Transformations#Ben_Prime's_Aliens">Żródło informacji</a>
+        <br>
+        <p>Stronę wykonał: Kacper Kacprzak, klasa 2ta</p>
+        </footer>
+</body>
+</html>
